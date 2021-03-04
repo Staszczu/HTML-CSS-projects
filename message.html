@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The HTML5 Herald</title>
+</head>
+<body>
+<div >
+    <h1>Porównaj</h1>
+    <input type="text" value="insert here">
+    <input type="text" value="insert here">
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+       
+    
+    
+</div>
+
+<script type="text/javascript">
+        function myFunction(){
+
+            var wartosc = parseInt(document.getElementsByTagName('input')[0].value)
+            var wartosc2 = parseInt(document.getElementsByTagName('input')[1].value)
+            
+            if(wartosc > wartosc2){
+                document.getElementById("demo").innerHTML = "Pierwsza liczba jest wieksza";
+            }else{
+                document.getElementById("demo").innerHTML = "Druga liczba jest wieksza";
+            }
+        }
+    
+</script>
+</body>
+</html>
